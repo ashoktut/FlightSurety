@@ -11,12 +11,20 @@ To install, download or clone the repo, then:
 `npm install`
 `truffle compile`
 
+## Versions used in project
+
+Truffle version
+`truffle: ^5.1.65`
+
+Web3 version
+`web3: ^1.8.2`
+
 ## Develop Client
 
 To run truffle tests:
 
-`truffle test ./test/flightSurety.js`
-`truffle test ./test/oracles.js`
+`truffle develop`
+`truffle test`
 
 To use the dapp:
 
@@ -39,6 +47,26 @@ To build dapp for prod:
 
 Deploy the contents of the ./dapp folder
 
+## Screenshots
+
+![ganache-cli](images/ganache_CLI.jpg)
+![ganache-cli continued](images/ganache_CLI2.jpg)
+![ganache-cli continued](images/ganache_CLI3.jpg)
+
+![Run the Dapp](images/runDapp1.jpg)
+![Run the Dapp continued](images/runDapp2.jpg)
+![Run the Dapp continued](images/runDapp3.jpg)
+
+![Run the server](images/runServer.jpg)
+
+![Truffle tests](images/t_test1.jpg)
+![Truffle tests 2](images/t_test2.jpg)
+![Truffle tests 3](images/t_test3.jpg)
+![Truffle tests 4](images/t_test4.jpg)
+![Truffle tests 5](images/t_test5.jpg)
+
+![Truffle Migrations](images/t_migrate.jpg)
+![Truffle Migrations 2](images/t_migrate2.jpg)
 
 ## Resources
 
