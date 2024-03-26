@@ -1,5 +1,5 @@
 var Test = require('../config/testConfig.js');
-var BigNumber = require('bignumber.js');
+//var BigNumber = require('bignumber.js');
 
 contract('Oracles', async (accounts) => {
 
@@ -11,7 +11,7 @@ contract('Oracles', async (accounts) => {
   const STATUS_CODE_LATE_WEATHER = 30;
   const STATUS_CODE_LATE_TECHNICAL = 40;
   const STATUS_CODE_LATE_OTHER = 50;
-  // var config;
+  var config;
   before('setup contract', async () => {
     config = await Test.Config(accounts);
     await config.flightSuretyData.authorizeCaller(config.flightSuretyApp.address, { from: accounts[0] });
@@ -80,8 +80,7 @@ contract('Oracles', async (accounts) => {
         }
         catch(e) {
           // Enable this when debugging
-          // console.log(e);
-          // console.log('\nError', idx, oracleIndexes[idx].toNumber(), flight, timestamp);
+          console.log('\nError', idx, oracleIndexes[idx].toNumber(), flight, timestamp);
         }
 
       }
